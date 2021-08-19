@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* ### Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+.main {
+    background-color: var(--dark-cyan);
+    position: relative;
+    overflow: hidden;
+}
+
+.main .pattern-top {
+    width: 55%;
+    position: absolute;
+    top: -25rem;
+    left: -5rem;
+    transform: rotate(355deg);
+}
+
+.main .pattern-top img {
+    width: 46rem;
+}
+
+.main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main .container .profile-card {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #fff;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 12px -1px hsl(229deg 23% 23% / 53%);
+    z-index: 1;
+}
+
+.main .container .profile-card .profile-pattern {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.main .container .profile-card .profile-pattern img:first-of-type {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.main .container .profile-card img.profile-img {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 97%;
+}
+
+.main .container .profile-card .profile-summery {
+    padding-top: 35px;
+}
+
+.main .container .profile-card .profile-summery h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+    text-align: center;
+}
+
+.main .container .profile-card .profile-summery h1 span {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    padding-left: 5px;
+}
+
+.main .container .profile-card .profile-summery p.profile-london {
+    color: hsl(229deg 23% 23% / 65%);
+    text-align: center;
+    padding: 5px 0px 30px;
+    border-bottom: 1px solid hsl(0deg 0% 59% / 35%);
+}
+
+.main .container .profile-card .profile-summery .prifile-count {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+.main .container .profile-card .profile-summery .prifile-count p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: hsl(229, 23%, 23%);
+    padding: 8px 0px;
+    line-height: 25px;
+}
+
+.main .container .profile-card .profile-summery .prifile-count p span {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main .pattern-bottom {
+    width: 70%;
+    position: absolute;
+    bottom: -41rem;
+    right: -14rem;
+    transform: rotate(339deg);
+}
+
+.main .pattern-bottom img {
+    width: 59rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main .pattern-top img {
+        width: 38rem;
+    }
+
+    .main .pattern-bottom img {
+        width: 56rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .main .pattern-top img {
+        width: 35rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main .pattern-top img {
+        width: 28rem;
+    }
+
+    .main .pattern-top {
+        top: -15rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .main .pattern-top {
+        top: -6rem;
+        left: -8rem;
+        transform: rotate(342deg);
+    }
+
+    .main .pattern-top img {
+        width: 25rem;
+    }
+
+    .main .pattern-bottom {
+        bottom: -39rem;
+        right: -9rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .main .container .profile-card .profile-pattern img:first-of-type {
+        width: 100%;
+        height: 140px;
+    }
+    .main .container .profile-card {
+        width: 310px;
+    }
+    .main .pattern-top img {
+        width: 20rem;
+    }
+    .main .container .profile-card .profile-summery .prifile-count p {
+        font-size: 20px;
+    }
+    .main .container .profile-card .profile-summery .prifile-count p span {
+        font-size: 14px;
+    }
+    .main .container .profile-card .profile-summery p.profile-london {
+        padding: 5px 0px 20px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .main .container .profile-card {
+        width: 290px;
+    }
+    .main .pattern-top {
+        top: -7rem;
+        left: -9rem;
+    }
+    .main .pattern-bottom {
+        bottom: -42rem;
+        right: -3rem;
+    }
+}
+.attribution {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    color: #fff;
+    padding-bottom: 5px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
